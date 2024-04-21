@@ -7,5 +7,5 @@ RUN apt-get update && \
     git \
     wget;
 
-RUN pip3 install notebook;
+RUN pip3 install notebook pycuda;
 RUN pip3 install torch torchvision torchaudio;
