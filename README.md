@@ -1,5 +1,27 @@
 # HashMaster
 
+## Download Cuda
+
+1. Download CUDA
+```
+https://developer.nvidia.com/cuda-12-0-0-download-archive
+```
+2. Change x-server to drivers in software & updates
+3. Restart computer
+3. Install nvcc drivers
+```
+https://developer.nvidia.com/cuda-12-2-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04
+```
+4. remove old deps
+```
+sudo apt autoremove
+```
+
+5. Setup docker and nvidia
+```
+https://medium.com/@jared.ratner2/setting-up-docker-and-docker-compose-with-nvidia-gpu-support-on-linux-716db95c0f7c
+```
+
 ## Cuda run
 `
 ```
