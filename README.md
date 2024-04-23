@@ -1,12 +1,19 @@
 # HashMaster
 
+## Cuda run
+`
+```
+export PATH="/usr/local/cuda-12.0/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda-12.0/lib64:$LD_LIBRARY_PATH"
+```
+
 ## Run Project
 
 To run project use the following commands
 ```
 cd docker
-docker-compose -f compilation.yaml -p <name> up -d
-docker exec -it <name> bash
+docker-compose -f compilation.yaml -p bronomor up -d
+docker exec -it bronomor bash
 ```
 
 Where you are inside a container you can run notebook
@@ -20,7 +27,6 @@ From the predefined steps you can choose
 3. cuLSH
 4. NeuralHashing + cuLSH
 5. Benchmarks
-
 
 ###  Tytuł magisterki
 
