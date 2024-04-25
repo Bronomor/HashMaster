@@ -13,3 +13,4 @@ services:
         environment:
              - NVIDIA_VISIBLE_DEVICES=all
         ipc: host
+        restart: always
