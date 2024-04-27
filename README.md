@@ -22,7 +22,7 @@ sudo apt autoremove
 https://medium.com/@jared.ratner2/setting-up-docker-and-docker-compose-with-nvidia-gpu-support-on-linux-716db95c0f7c
 ```
 
-## Cuda run
+6. Remember to write to .bashrc the paths
 `
 ```
 export PATH="/usr/local/cuda-12.0/bin:$PATH"
