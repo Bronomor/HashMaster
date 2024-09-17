@@ -1,0 +1,17 @@
+version: '3'
+services:
+    compile:
+        build:
+            context:    "./"
+            dockerfile: "./Dockerfile"
+        working_dir: ${PWD}/..
+        network_mode: "host"
+        volumes:
+            - "${PWD}/..:/${PWD}/.."
+        tty: true
+        runtime: nvidia
+        environment:
+             - NVIDIA_VISIBLE_DEVICES=all
+        ipc: host
+        restart: always
+        command: python3 -m notebook --allow-root --password root
